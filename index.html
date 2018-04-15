@@ -26,25 +26,23 @@
         <main>
           <section class="list-task__content">
             <ul class="list-task">
-              <li class="list-task__item li">
-                <input class="check" id="c1" type="checkbox" name="" value="">
-                <label for="c1" class="check-text"><span class="input"></span>Tarea 01</label>
-              </li>
-              <li class="list-task__item li">
-                <input class="ckeck" type="checkbox" name="" value="">
-                <p class="check-text">Tarea 02</p>
-              </li>
             </ul>
           </section>
-          <section class="new-task">
-            <button type="button" name="button">+</button>
+        </main>
+        <footer class="footer">
+          <section class="footer__new-task">
+            <button type="button" name="button" class="button--new-task new-task">+</button>
           </section>
           <section class="modal hidden">
-            <p>Nueva tarea</p>
-            <input type="text" name="" class="input-task" value="" placeholder="Escribe tu tarea">
-            <button type="button" name="button" class="button-add">Añadir</button>
+            <div class="modal__box">
+              <div class="modal__box-info">
+                <p class="modal__box-title">Nueva tarea</p>
+                <input type="text" name="" class="input-task modal--box-cel" value="" placeholder="Escribe tu tarea">
+              </div>
+              <button type="button" name="button" class="button-add">Añadir</button>
+            </div>
           </section>
-        </main>
+        </footer>
       </section>
     </div>
 
