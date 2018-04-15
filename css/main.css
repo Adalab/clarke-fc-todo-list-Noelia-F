@@ -1,0 +1,16 @@
+.body{
+  box-sizing: border-box;
+}
+
+/*Clase JS*/
+.done{
+  text-decoration: line-through;
+  color: grey;
+}
+.done-input{
+  background-color: blue;
+}
+
+.hidden{
+  display: none;
+}
