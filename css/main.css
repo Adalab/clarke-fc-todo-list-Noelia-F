@@ -72,6 +72,15 @@
   width:100%;
   border-bottom: 1px solid #13d8c3;
 }
+.logo-adalab{
+  width: 50px;
+  height: 0;
+  padding-top: 50px;
+  overflow: hidden;
+  background-image: url('../images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .header__date{
   display: flex;
   justify-content: center;
@@ -101,13 +110,13 @@
 }
 .list-task__item{
   display: flex;
-  padding: 10px;
+  padding: 10px 0px 10px 0px;
 }
 
-input[type="checkbox"] {
-    display:none;
+.check {
+  opacity: 0;
 }
-input[type="checkbox"] + .check-text .input {
+.checkbox-1 {
     display:inline-block;
     width:19px;
     height:19px;
@@ -118,12 +127,11 @@ input[type="checkbox"] + .check-text .input {
     cursor:pointer;
 }
 
-input[type="checkbox"] + .check-text .input-checked{
-  border: 4px solid #13d8c3;
-  background-image:url('../images/checked.svg')left top no-repeat;
-  background-image: url(../images/checked.svg);
-  background-position: left center;
-  background-size: contain;
+.input--checked{
+  position: relative;
+  background-image:url('../images/checked.svg');
+  background-position: center left;
+  background-size: 10%;
   background-repeat: no-repeat;
 }
 
