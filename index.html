@@ -7,42 +7,46 @@
     <title>My To Do list</title>
   </head>
   <body class="body">
-    <header>
-      <div>
-        <img src="https://placehold.it/50x50" alt="Adalab">
-      </div>
-      <section>
-        <div>
-          <p class="box__number-day"></p>
-        </div>
-        <div>
-          <p class="box__write-day"></p>
-          <p class="box__year-month"></p>
-        </div>
+    <div class="site__box">
+      <section class="page">
+        <header class="header">
+          <div>
+            <img src="https://placehold.it/50x50" alt="Adalab">
+          </div>
+          <section class="header__date">
+            <div class="date__box__number-day">
+              <p class="box__number-day"></p>
+            </div>
+            <div class="date__box__text-date">
+              <p class="box__write-day"></p>
+              <p class="box__year-month"></p>
+            </div>
+          </section>
+        </header>
+        <main>
+          <section class="list-task__content">
+            <ul class="list-task">
+              <li class="list-task__item li">
+                <input class="check" id="c1" type="checkbox" name="" value="">
+                <label for="c1" class="check-text"><span class="input"></span>Tarea 01</label>
+              </li>
+              <li class="list-task__item li">
+                <input class="ckeck" type="checkbox" name="" value="">
+                <p class="check-text">Tarea 02</p>
+              </li>
+            </ul>
+          </section>
+          <section class="new-task">
+            <button type="button" name="button">+</button>
+          </section>
+          <section class="modal hidden">
+            <p>Nueva tarea</p>
+            <input type="text" name="" class="input-task" value="" placeholder="Escribe tu tarea">
+            <button type="button" name="button" class="button-add">Añadir</button>
+          </section>
+        </main>
       </section>
-    </header>
-    <main>
-      <section>
-        <ul class="list-task">
-          <li class="li">
-            <input class="check" type="checkbox" name="" value="">
-            <p class="check-text">Tarea 01</p>
-          </li>
-          <li>
-            <input class="ckeck" type="checkbox" name="" value="">
-            <p class="check-text">Tarea 02</p>
-          </li>
-        </ul>
-      </section>
-      <section class="new-task">
-        <button type="button" name="button">+</button>
-      </section>
-      <section class="modal hidden">
-        <p>Nueva tarea</p>
-        <input type="text" name="" class="input-task" value="" placeholder="Escribe tu tarea">
-        <button type="button" name="button" class="button-add">Añadir</button>
-      </section>
-    </main>
+    </div>
 
     <script type="text/javascript" src=".\js\main.js">
     </script>

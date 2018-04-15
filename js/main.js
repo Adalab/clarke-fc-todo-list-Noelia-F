@@ -22,11 +22,13 @@ writeCurrentDate();
 //Tachar tareas
 const tasks = document.querySelectorAll('.check .chech-text');
 const check = document.querySelector('.check');
+const input = document.querySelector('.input');
 const taskText = document.querySelector('.check-text');
 let checkTask = function(){
 
   taskText.classList.toggle('done');
-  check.classList.toggle('done-input');
+  input.classList.toggle('input-checked');
+
 }
 
 check.addEventListener('click', checkTask);
@@ -44,7 +46,7 @@ newTask.addEventListener('click', showModal);
 
 //Añadir tareas
 function addTask(){
-  listTask.innerHTML += '<li><input class="check" type="checkbox" name="" value=""><p class="check-text">' + inputTask.value + '</p></li>';
+  listTask.innerHTML += '<li class="list-task__item"><input class="check" type="checkbox" name="" value=""><p class="check-text">' + inputTask.value + '</p></li>';
   modalTask.classList.add('hidden');
   inputTask.value = '';
 }
